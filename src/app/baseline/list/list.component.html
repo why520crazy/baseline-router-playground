@@ -1,0 +1,38 @@
+基线列表
+<hr />
+
+<div style="display: flex; flex-direction: row;">
+  <div style="width: 200px;">
+    <ul>
+      <li><a [routerLink]="['../1']">Item1</a></li>
+      <li><a [routerLink]="['../2']">Item2</a></li>
+    </ul>
+  </div>
+
+  <div>
+    分类: {{ categoryId$ | async }}
+
+<table>
+  <thead>
+    <tr>
+      <th>名称</th>
+      <th>创建日期</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a routerLink="../../baseline1">基线1</a></td>
+      <td>2023-10-10</td>
+    </tr>
+    <tr>
+      <td><a routerLink="../../baseline2">基线2</a></td>
+      <td>2023-10-10</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+
+</div>
+
+
+
